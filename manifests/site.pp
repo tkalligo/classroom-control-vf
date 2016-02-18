@@ -49,4 +49,12 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "Greetings from West Chester Training Room A - I am ${::hostname}": }
+  file { "motd":
+    path => "/etc/motd",
+    ensure => file,
+    owner => 'root',
+    group => 'root',
+    mode => '0644',
+    content => "Lab 7.1 to modify the MOTD from GitHub\n",
+  }
 }
