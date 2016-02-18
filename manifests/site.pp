@@ -70,4 +70,7 @@ node default {
   #Include Users Class
   include users
   
+  #Include Skelton - lab 9.3
+  include skeleton
+  
 }
