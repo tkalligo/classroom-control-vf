@@ -44,7 +44,7 @@ ini_setting { 'random ordering':
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-node 'tkalligo.puppetlabs.cm'{
+node 'tkalligo.puppetlabs.vm'{
   notify { "New notify message for new node definition.\n ${::hostname}":}
 }
 
