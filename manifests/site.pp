@@ -46,6 +46,8 @@ ini_setting { 'random ordering':
 
 node 'tkalligo.puppetlabs.vm'{
   notify { "New notify message for new node definition.\n ${::hostname}":}
+  $message = hiera('message')
+  notify { "$message" : }
 }
 
 node default {
