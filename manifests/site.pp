@@ -77,4 +77,7 @@ node default {
   #Include Skelton - lab 9.3
   include skeleton
   
+  $message = hiera('message')
+  notify { "$message" : }
+  
 }
